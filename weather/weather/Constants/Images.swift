@@ -9,7 +9,15 @@
 #endif
 
 enum Asset: String {
-  case ImageTest = "ImageTest"
+  case Broken_clouds = "broken_clouds"
+  case Clear_sky = "clear_sky"
+  case Few_clouds = "few_clouds"
+  case Mist = "mist"
+  case Rain = "rain"
+  case Scattered_clouds = "scattered_clouds"
+  case Shower_rain = "shower_rain"
+  case Snow = "snow"
+  case Thunderstorm = "thunderstorm"
 
   var image: Image {
     return Image(asset: self)

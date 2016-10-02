@@ -7,8 +7,9 @@
 
 import Foundation
 import SwiftyJSON
+import RealmSwift
 
-public class Forecast: NSObject {
+public class Forecast: Object {
   
   // MARK: Declaration for string constants to be used to decode and also serialize.
   internal let kForecastCityKey: String = "city"
@@ -17,9 +18,9 @@ public class Forecast: NSObject {
   
   
   // MARK: Properties
-  public var city: City?
-  public var cnt: Int?
-  public var list: [List]?
+  dynamic var city: City?
+  dynamic var cnt: Int = 0
+  let list = List<WeatherList>()
   
   
   // MARK: SwiftyJSON Initalizers
@@ -37,16 +38,16 @@ public class Forecast: NSObject {
    - parameter json: JSON object from SwiftyJSON.
    - returns: An initalized instance of the class.
    */
-  public init(json: JSON) {
+  public convenience init(json: JSON) {
+    self.init()
     city = City(json: json[kForecastCityKey])
-    cnt = json[kForecastCntKey].int
-    list = []
+    if let cnt = json[kForecastCntKey].int {
+      self.cnt = cnt
+    }
     if let items = json[kForecastListKey].array {
       for item in items {
-        list?.append(List(json: item))
+        list.append(WeatherList(json: item))
       }
-    } else {
-      list = nil
     }
     
   }
@@ -62,12 +63,12 @@ public class Forecast: NSObject {
     if city != nil {
       dictionary.updateValue(city!.dictionaryRepresentation(), forKey: kForecastCityKey)
     }
-    if cnt != nil {
-      dictionary.updateValue(cnt!, forKey: kForecastCntKey)
-    }
-    if list?.count > 0 {
+    
+    dictionary.updateValue(cnt, forKey: kForecastCntKey)
+    
+    if list.count > 0 {
       var temp: [AnyObject] = []
-      for item in list! {
+      for item in list {
         temp.append(item.dictionaryRepresentation())
       }
       dictionary.updateValue(temp, forKey: kForecastListKey)

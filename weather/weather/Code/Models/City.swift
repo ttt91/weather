@@ -7,8 +7,9 @@
 
 import Foundation
 import SwiftyJSON
+import RealmSwift
 
-public class City: NSObject {
+public class City: Object {
   
   // MARK: Declaration for string constants to be used to decode and also serialize.
   internal let kCityCountryKey: String = "country"
@@ -16,8 +17,8 @@ public class City: NSObject {
   
   
   // MARK: Properties
-  public var country: String?
-  public var name: String?
+  dynamic var country: String?
+  dynamic var name: String?
   
   
   // MARK: SwiftyJSON Initalizers
@@ -35,10 +36,10 @@ public class City: NSObject {
    - parameter json: JSON object from SwiftyJSON.
    - returns: An initalized instance of the class.
    */
-  public init(json: JSON) {
+  public convenience init(json: JSON) {
+    self.init()
     country = json[kCityCountryKey].string
     name = json[kCityNameKey].string
-    
   }
   
   

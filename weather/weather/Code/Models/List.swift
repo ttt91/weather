@@ -7,8 +7,9 @@
 
 import Foundation
 import SwiftyJSON
+import RealmSwift
 
-public class List: NSObject {
+public class WeatherList: Object {
   
   // MARK: Declaration for string constants to be used to decode and also serialize.
   internal let kListDtTxtKey: String = "dt_txt"
@@ -18,10 +19,10 @@ public class List: NSObject {
   
   
   // MARK: Properties
-  public var dtTxt: String?
-  public var weather: [Weather]?
-  public var wind: Wind?
-  public var main: Main?
+  dynamic var dtTxt: String?
+  let weather = List<Weather>()
+  dynamic var wind: Wind?
+  dynamic var main: Main?
   
   
   // MARK: SwiftyJSON Initalizers
@@ -39,15 +40,13 @@ public class List: NSObject {
    - parameter json: JSON object from SwiftyJSON.
    - returns: An initalized instance of the class.
    */
-  public init(json: JSON) {
+  public convenience init(json: JSON) {
+    self.init()
     dtTxt = json[kListDtTxtKey].string
-    weather = []
     if let items = json[kListWeatherKey].array {
       for item in items {
-        weather?.append(Weather(json: item))
+        weather.append(Weather(json: item))
       }
-    } else {
-      weather = nil
     }
     wind = Wind(json: json[kListWindKey])
     main = Main(json: json[kListMainKey])
@@ -65,9 +64,9 @@ public class List: NSObject {
     if dtTxt != nil {
       dictionary.updateValue(dtTxt!, forKey: kListDtTxtKey)
     }
-    if weather?.count > 0 {
+    if weather.count > 0 {
       var temp: [AnyObject] = []
-      for item in weather! {
+      for item in weather {
         temp.append(item.dictionaryRepresentation())
       }
       dictionary.updateValue(temp, forKey: kListWeatherKey)
