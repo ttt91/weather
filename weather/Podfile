@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '9.0'
+
+target 'weather' do
+  use_frameworks!
+
+  # Pods for weather
+  pod ‘RealmSwift’
+  pod ‘Alamofire’
+  pod ’SwiftyJSON’
+  pod ‘SnapKit’ 
+
+end
