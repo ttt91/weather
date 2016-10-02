@@ -12,6 +12,12 @@
 		0FD0030F1DA1968C004880D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD0030D1DA1968C004880D1 /* Main.storyboard */; };
 		0FD003111DA1968C004880D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD003101DA1968C004880D1 /* Assets.xcassets */; };
 		0FD003141DA1968C004880D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD003121DA1968C004880D1 /* LaunchScreen.storyboard */; };
+		0FD003201DA19CC0004880D1 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0031F1DA19CC0004880D1 /* Storyboards.swift */; };
+		0FD003221DA19D71004880D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FD003211DA19D71004880D1 /* Localizable.strings */; };
+		0FD003241DA19E40004880D1 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD003231DA19E40004880D1 /* L10n.swift */; };
+		0FD003261DA19EE3004880D1 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD003251DA19EE3004880D1 /* Images.swift */; };
+		0FD003281DA19F05004880D1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD003271DA19F05004880D1 /* Colors.swift */; };
+		0FD0032A1DA19F47004880D1 /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0FD003291DA19F47004880D1 /* Colors.txt */; };
 		52F4399A9EA9FB0ACC194D4A /* Pods_weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2594B1E8672A46A08FA1DD79 /* Pods_weather.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +29,12 @@
 		0FD003101DA1968C004880D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FD003131DA1968C004880D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FD003151DA1968C004880D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FD0031F1DA19CC0004880D1 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		0FD003211DA19D71004880D1 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Ressources/Localizable.strings; sourceTree = "<group>"; };
+		0FD003231DA19E40004880D1 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		0FD003251DA19EE3004880D1 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		0FD003271DA19F05004880D1 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0FD003291DA19F47004880D1 /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Colors.txt; path = Ressources/Colors.txt; sourceTree = "<group>"; };
 		2594B1E8672A46A08FA1DD79 /* Pods_weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2828AD8EE5C15124CAAEE4DC /* Pods-weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weather/Pods-weather.debug.xcconfig"; sourceTree = "<group>"; };
 		E13FF16CA74B0666503E38B3 /* Pods-weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-weather/Pods-weather.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,14 +73,36 @@
 		0FD003081DA1968C004880D1 /* weather */ = {
 			isa = PBXGroup;
 			children = (
+				0FD0031E1DA19CAB004880D1 /* Ressources */,
+				0FD0031B1DA19B86004880D1 /* Constants */,
 				0FD003091DA1968C004880D1 /* AppDelegate.swift */,
 				0FD0030B1DA1968C004880D1 /* ViewController.swift */,
-				0FD0030D1DA1968C004880D1 /* Main.storyboard */,
 				0FD003101DA1968C004880D1 /* Assets.xcassets */,
-				0FD003121DA1968C004880D1 /* LaunchScreen.storyboard */,
 				0FD003151DA1968C004880D1 /* Info.plist */,
 			);
 			path = weather;
+			sourceTree = "<group>";
+		};
+		0FD0031B1DA19B86004880D1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0FD0031F1DA19CC0004880D1 /* Storyboards.swift */,
+				0FD003231DA19E40004880D1 /* L10n.swift */,
+				0FD003251DA19EE3004880D1 /* Images.swift */,
+				0FD003271DA19F05004880D1 /* Colors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0FD0031E1DA19CAB004880D1 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				0FD003291DA19F47004880D1 /* Colors.txt */,
+				0FD0030D1DA1968C004880D1 /* Main.storyboard */,
+				0FD003121DA1968C004880D1 /* LaunchScreen.storyboard */,
+				0FD003211DA19D71004880D1 /* Localizable.strings */,
+			);
+			name = Ressources;
 			sourceTree = "<group>";
 		};
 		751BCFF960ABDD222E85786C /* Pods */ = {
@@ -96,6 +130,7 @@
 			buildConfigurationList = 0FD003181DA1968C004880D1 /* Build configuration list for PBXNativeTarget "weather" */;
 			buildPhases = (
 				14CB311C8365240FBFE3D952 /* 📦 Check Pods Manifest.lock */,
+				0FD0032B1DA19FF1004880D1 /* SwiftGen */,
 				0FD003021DA1968C004880D1 /* Sources */,
 				0FD003031DA1968C004880D1 /* Frameworks */,
 				0FD003041DA1968C004880D1 /* Resources */,
@@ -150,7 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FD003141DA1968C004880D1 /* LaunchScreen.storyboard in Resources */,
+				0FD003221DA19D71004880D1 /* Localizable.strings in Resources */,
 				0FD003111DA1968C004880D1 /* Assets.xcassets in Resources */,
+				0FD0032A1DA19F47004880D1 /* Colors.txt in Resources */,
 				0FD0030F1DA1968C004880D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +195,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0FD0032B1DA19FF1004880D1 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which $PODS_ROOT/SwiftGen/bin/swiftgen >/dev/null; then\n$PODS_ROOT/SwiftGen/bin/swiftgen storyboards \"$PROJECT_DIR\" --output \"$PROJECT_DIR/weather/Constants/Storyboards.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen colors \"$PROJECT_DIR/weather/Ressources/Colors.txt\" --output \"$PROJECT_DIR/weather/Constants/Colors.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen images \"$PROJECT_DIR\" --output \"$PROJECT_DIR/weather/Constants/Images.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen strings \"$PROJECT_DIR/weather/Ressources/Localizable.strings\" --output \"$PROJECT_DIR/weather/Constants/L10n.swift\"\n\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi\n";
+		};
 		14CB311C8365240FBFE3D952 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD003241DA19E40004880D1 /* L10n.swift in Sources */,
+				0FD003281DA19F05004880D1 /* Colors.swift in Sources */,
+				0FD003201DA19CC0004880D1 /* Storyboards.swift in Sources */,
+				0FD003261DA19EE3004880D1 /* Images.swift in Sources */,
 				0FD0030C1DA1968C004880D1 /* ViewController.swift in Sources */,
 				0FD0030A1DA1968C004880D1 /* AppDelegate.swift in Sources */,
 			);
