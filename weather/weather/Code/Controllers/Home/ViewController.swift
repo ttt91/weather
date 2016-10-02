@@ -13,6 +13,8 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.loadWeather()
   }
 
   override func didReceiveMemoryWarning() {
@@ -21,5 +23,18 @@ class ViewController: UIViewController {
   }
 
 
+}
+
+// MARK: Network part
+extension ViewController {
+  func loadWeather(city:String = "Paris,fr", days:Int = 5) {
+    WeatherServices.sharedInstance.weathers(forCity: city, andDays: days) { (city, result, error) -> Void in
+      if let error = error {
+        print(error)
+      } else {
+        print(result?.dictionaryRepresentation())
+      }
+    }
+  }
 }
 
