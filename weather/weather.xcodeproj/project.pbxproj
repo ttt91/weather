@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F339DC11DA303B500AFFC77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F339DC01DA303B500AFFC77 /* Main.storyboard */; };
+		0F433F0B1DA307B100A161A8 /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F433F091DA307B100A161A8 /* ForecastCell.swift */; };
+		0F433F0C1DA307B100A161A8 /* ForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F433F0A1DA307B100A161A8 /* ForecastCell.xib */; };
+		0F433F0E1DA30CA600A161A8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F433F0D1DA30CA600A161A8 /* Helper.swift */; };
+		0F433F101DA3146C00A161A8 /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F433F0F1DA3146C00A161A8 /* Float+Extensions.swift */; };
 		0FB613241DA2DBE200964E8F /* Realm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB613231DA2DBE200964E8F /* Realm+Extensions.swift */; };
 		0FB613271DA2DF7F00964E8F /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB613261DA2DF7F00964E8F /* DataFetcher.swift */; };
 		0FB613291DA2F97A00964E8F /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB613281DA2F97A00964E8F /* NSDate+Extensions.swift */; };
@@ -18,7 +23,6 @@
 		0FD003261DA19EE3004880D1 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD003251DA19EE3004880D1 /* Images.swift */; };
 		0FD003281DA19F05004880D1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD003271DA19F05004880D1 /* Colors.swift */; };
 		0FD0032A1DA19F47004880D1 /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0FD003291DA19F47004880D1 /* Colors.txt */; };
-		0FD003341DA1AF80004880D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD003321DA1AF80004880D1 /* Main.storyboard */; };
 		0FD003351DA1AF80004880D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD003331DA1AF80004880D1 /* ViewController.swift */; };
 		0FD003371DA1AFBE004880D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD003361DA1AFBE004880D1 /* AppDelegate.swift */; };
 		0FD0033E1DA1AFEC004880D1 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD003381DA1AFEC004880D1 /* City.swift */; };
@@ -32,6 +36,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F339DC01DA303B500AFFC77 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Home/Main.storyboard; sourceTree = "<group>"; };
+		0F433F091DA307B100A161A8 /* ForecastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastCell.swift; path = Code/Views/ForecastCell.swift; sourceTree = "<group>"; };
+		0F433F0A1DA307B100A161A8 /* ForecastCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ForecastCell.xib; path = Code/Views/ForecastCell.xib; sourceTree = "<group>"; };
+		0F433F0D1DA30CA600A161A8 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = Ressources/Helper.swift; sourceTree = "<group>"; };
+		0F433F0F1DA3146C00A161A8 /* Float+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Float+Extensions.swift"; path = "Code/Extensions/Float+Extensions.swift"; sourceTree = "<group>"; };
 		0FB613231DA2DBE200964E8F /* Realm+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Realm+Extensions.swift"; path = "Code/Extensions/Realm+Extensions.swift"; sourceTree = "<group>"; };
 		0FB613261DA2DF7F00964E8F /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataFetcher.swift; path = Code/MVVM/DataFetcher.swift; sourceTree = "<group>"; };
 		0FB613281DA2F97A00964E8F /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Extensions.swift"; path = "Code/Extensions/NSDate+Extensions.swift"; sourceTree = "<group>"; };
@@ -45,7 +54,6 @@
 		0FD003251DA19EE3004880D1 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		0FD003271DA19F05004880D1 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0FD003291DA19F47004880D1 /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Colors.txt; path = Ressources/Colors.txt; sourceTree = "<group>"; };
-		0FD003321DA1AF80004880D1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Home/Main.storyboard; sourceTree = "<group>"; };
 		0FD003331DA1AF80004880D1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Home/ViewController.swift; sourceTree = "<group>"; };
 		0FD003361DA1AFBE004880D1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Code/AppDelegate.swift; sourceTree = "<group>"; };
 		0FD003381DA1AFEC004880D1 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = Code/Models/City.swift; sourceTree = "<group>"; };
@@ -72,11 +80,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F433F081DA3076300A161A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F433F091DA307B100A161A8 /* ForecastCell.swift */,
+				0F433F0A1DA307B100A161A8 /* ForecastCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		0FB613221DA2DB9A00964E8F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				0FB613231DA2DBE200964E8F /* Realm+Extensions.swift */,
 				0FB613281DA2F97A00964E8F /* NSDate+Extensions.swift */,
+				0F433F0F1DA3146C00A161A8 /* Float+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -134,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				0FD003291DA19F47004880D1 /* Colors.txt */,
+				0F433F0D1DA30CA600A161A8 /* Helper.swift */,
 				0FD003121DA1968C004880D1 /* LaunchScreen.storyboard */,
 				0FD003211DA19D71004880D1 /* Localizable.strings */,
 			);
@@ -148,6 +167,7 @@
 				0FD003441DA1B01E004880D1 /* Services */,
 				0FD0032E1DA1A302004880D1 /* Controllers */,
 				0FB613251DA2DF6200964E8F /* MVVM */,
+				0F433F081DA3076300A161A8 /* Views */,
 				0FB613221DA2DB9A00964E8F /* Extensions */,
 			);
 			name = Code;
@@ -166,8 +186,8 @@
 		0FD0032F1DA1A32D004880D1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				0FD003321DA1AF80004880D1 /* Main.storyboard */,
 				0FD003331DA1AF80004880D1 /* ViewController.swift */,
+				0F339DC01DA303B500AFFC77 /* Main.storyboard */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -280,9 +300,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FD003141DA1968C004880D1 /* LaunchScreen.storyboard in Resources */,
-				0FD003341DA1AF80004880D1 /* Main.storyboard in Resources */,
+				0F339DC11DA303B500AFFC77 /* Main.storyboard in Resources */,
 				0FD003221DA19D71004880D1 /* Localizable.strings in Resources */,
 				0FD003111DA1968C004880D1 /* Assets.xcassets in Resources */,
+				0F433F0C1DA307B100A161A8 /* ForecastCell.xib in Resources */,
 				0FD0032A1DA19F47004880D1 /* Colors.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +378,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FB613271DA2DF7F00964E8F /* DataFetcher.swift in Sources */,
+				0F433F101DA3146C00A161A8 /* Float+Extensions.swift in Sources */,
+				0F433F0E1DA30CA600A161A8 /* Helper.swift in Sources */,
 				0FD003411DA1AFEC004880D1 /* Main.swift in Sources */,
 				0FD0033F1DA1AFEC004880D1 /* Forecast.swift in Sources */,
 				0FD003371DA1AFBE004880D1 /* AppDelegate.swift in Sources */,
@@ -372,6 +395,7 @@
 				0FB613241DA2DBE200964E8F /* Realm+Extensions.swift in Sources */,
 				0FD003401DA1AFEC004880D1 /* List.swift in Sources */,
 				0FD003431DA1AFEC004880D1 /* Wind.swift in Sources */,
+				0F433F0B1DA307B100A161A8 /* ForecastCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

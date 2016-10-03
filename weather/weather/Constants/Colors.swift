@@ -20,13 +20,25 @@ extension Color {
 }
 
 enum ColorName {
-  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ffffff"></span>
-  /// Alpha: 100% <br/> (0xffffffff)
-  case White
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#08a4a9"></span>
+  /// Alpha: 100% <br/> (0x08a4a9ff)
+  case Blue
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#a90097"></span>
+  /// Alpha: 100% <br/> (0xa90097ff)
+  case Purple
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ff5670"></span>
+  /// Alpha: 100% <br/> (0xff5670ff)
+  case Red
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ffce00"></span>
+  /// Alpha: 100% <br/> (0xffce00ff)
+  case Yellow
 
   var rgbaValue: UInt32 {
     switch self {
-    case .White: return 0xffffffff
+    case .Blue: return 0x08a4a9ff
+    case .Purple: return 0xa90097ff
+    case .Red: return 0xff5670ff
+    case .Yellow: return 0xffce00ff
     }
   }
 

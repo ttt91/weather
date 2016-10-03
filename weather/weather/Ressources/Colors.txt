@@ -1,1 +1,6 @@
-white : #FFFFFF
+red : #FF5670
+yellow: #FFCE00
+purple: #A90097
+blue: #08A4A9
+
+

@@ -41,8 +41,17 @@ struct StoryboardScene {
   enum LaunchScreen: StoryboardSceneType {
     static let storyboardName = "LaunchScreen"
   }
-  enum Main: StoryboardSceneType {
+  enum Main: String, StoryboardSceneType {
     static let storyboardName = "Main"
+
+    case ViewControllerScene = "ViewController"
+    static func instantiateViewController() -> ViewController {
+      guard let vc = StoryboardScene.Main.ViewControllerScene.viewController() as? ViewController
+      else {
+        fatalError("ViewController 'ViewController' is not of the expected class ViewController.")
+      }
+      return vc
+    }
   }
 }
 
