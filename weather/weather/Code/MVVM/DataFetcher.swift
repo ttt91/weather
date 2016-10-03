@@ -29,8 +29,6 @@ struct DataFetcher {
       items.append(getItem(forecast.list, day: day))
     }
     
-    print("Items \(items)")
-    
     return items
   }
   

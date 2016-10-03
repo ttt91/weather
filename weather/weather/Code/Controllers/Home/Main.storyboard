@@ -42,19 +42,53 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="IQI-gX-yhI" firstAttribute="leading" secondItem="Sri-iQ-Qtk" secondAttribute="leading" id="Bj7-Mj-UIW"/>
+                            <constraint firstItem="IQI-gX-yhI" firstAttribute="top" secondItem="4E7-Lb-LTJ" secondAttribute="bottom" id="KPf-tU-UOM"/>
                             <constraint firstAttribute="trailing" secondItem="IQI-gX-yhI" secondAttribute="trailing" id="Ohf-Rh-amD"/>
-                            <constraint firstItem="IQI-gX-yhI" firstAttribute="top" secondItem="4E7-Lb-LTJ" secondAttribute="bottom" id="tZf-eW-zWV"/>
-                            <constraint firstItem="61H-K3-QAH" firstAttribute="top" secondItem="IQI-gX-yhI" secondAttribute="bottom" id="yN1-eS-jWZ"/>
+                            <constraint firstItem="61H-K3-QAH" firstAttribute="top" secondItem="IQI-gX-yhI" secondAttribute="bottom" id="fDW-R9-1I2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="u9H-uu-ozE"/>
                     <connections>
                         <outlet property="ibCollectionView" destination="IQI-gX-yhI" id="Or5-DR-uEr"/>
+                        <segue destination="yeS-7r-cE0" kind="show" id="3Qj-HR-815"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDD-wn-QWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="210"/>
+            <point key="canvasLocation" x="1058" y="210"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="2JD-n7-RE2">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yeS-7r-cE0" customClass="DetailViewController" customModule="weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f9J-TY-0ud"/>
+                        <viewControllerLayoutGuide type="bottom" id="3dA-qB-lih"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hcn-rg-kmP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wEj-wM-qnR">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3dA-qB-lih" firstAttribute="top" secondItem="wEj-wM-qnR" secondAttribute="bottom" id="1ri-c1-9Ur"/>
+                            <constraint firstAttribute="trailing" secondItem="wEj-wM-qnR" secondAttribute="trailing" id="7zW-hF-x9J"/>
+                            <constraint firstItem="wEj-wM-qnR" firstAttribute="leading" secondItem="hcn-rg-kmP" secondAttribute="leading" id="FMf-SM-N52"/>
+                            <constraint firstItem="wEj-wM-qnR" firstAttribute="top" secondItem="f9J-TY-0ud" secondAttribute="bottom" id="p9B-uZ-guD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ibTableView" destination="wEj-wM-qnR" id="G0c-oy-ZOv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vFU-4L-UBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1729" y="210"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZUk-tR-K51">

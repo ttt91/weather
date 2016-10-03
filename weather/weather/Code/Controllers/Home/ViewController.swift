@@ -78,6 +78,11 @@ extension ViewController : UICollectionViewDataSource {
 extension ViewController : UICollectionViewDelegate {
   
   func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    let controller = StoryboardScene.Main.instantiateDetailViewController()
+    controller.weatherItem = self.weatherItems[indexPath.row]
+    controller.color = Helper.forecastColor(index: indexPath.row)
+    
+    self.navigationController?.pushViewController(controller, animated: true)
   }
   
 }

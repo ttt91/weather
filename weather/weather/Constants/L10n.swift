@@ -3,8 +3,14 @@
 import Foundation
 
 enum L10n {
-  /// test
-  case Test
+  /// Température matin
+  case MorningWeather
+  /// Température midi
+  case AfternoonWeather
+  /// Humidité
+  case HumidityWeather
+  /// Vitesse du vent
+  case WindSpeedWeather
 }
 
 extension L10n: CustomStringConvertible {
@@ -12,8 +18,14 @@ extension L10n: CustomStringConvertible {
 
   var string: String {
     switch self {
-      case .Test:
-        return L10n.tr("test")
+      case .MorningWeather:
+        return L10n.tr("morning.weather")
+      case .AfternoonWeather:
+        return L10n.tr("afternoon.weather")
+      case .HumidityWeather:
+        return L10n.tr("humidity.weather")
+      case .WindSpeedWeather:
+        return L10n.tr("windSpeed.weather")
     }
   }
 

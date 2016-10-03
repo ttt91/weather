@@ -12,6 +12,11 @@
 		0F433F0C1DA307B100A161A8 /* ForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F433F0A1DA307B100A161A8 /* ForecastCell.xib */; };
 		0F433F0E1DA30CA600A161A8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F433F0D1DA30CA600A161A8 /* Helper.swift */; };
 		0F433F101DA3146C00A161A8 /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F433F0F1DA3146C00A161A8 /* Float+Extensions.swift */; };
+		0F433F121DA3174300A161A8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F433F111DA3174300A161A8 /* DetailViewController.swift */; };
+		0F433F151DA318E600A161A8 /* ForecastDetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F433F131DA318E600A161A8 /* ForecastDetailHeaderCell.swift */; };
+		0F433F161DA318E600A161A8 /* ForecastDetailHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F433F141DA318E600A161A8 /* ForecastDetailHeaderCell.xib */; };
+		0F433F191DA3190700A161A8 /* ForecastDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F433F171DA3190700A161A8 /* ForecastDetailCell.swift */; };
+		0F433F1A1DA3190700A161A8 /* ForecastDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F433F181DA3190700A161A8 /* ForecastDetailCell.xib */; };
 		0FB613241DA2DBE200964E8F /* Realm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB613231DA2DBE200964E8F /* Realm+Extensions.swift */; };
 		0FB613271DA2DF7F00964E8F /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB613261DA2DF7F00964E8F /* DataFetcher.swift */; };
 		0FB613291DA2F97A00964E8F /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB613281DA2F97A00964E8F /* NSDate+Extensions.swift */; };
@@ -41,6 +46,11 @@
 		0F433F0A1DA307B100A161A8 /* ForecastCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ForecastCell.xib; path = Code/Views/ForecastCell.xib; sourceTree = "<group>"; };
 		0F433F0D1DA30CA600A161A8 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = Ressources/Helper.swift; sourceTree = "<group>"; };
 		0F433F0F1DA3146C00A161A8 /* Float+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Float+Extensions.swift"; path = "Code/Extensions/Float+Extensions.swift"; sourceTree = "<group>"; };
+		0F433F111DA3174300A161A8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Home/DetailViewController.swift; sourceTree = "<group>"; };
+		0F433F131DA318E600A161A8 /* ForecastDetailHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastDetailHeaderCell.swift; path = Code/Views/ForecastDetailHeaderCell.swift; sourceTree = "<group>"; };
+		0F433F141DA318E600A161A8 /* ForecastDetailHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ForecastDetailHeaderCell.xib; path = Code/Views/ForecastDetailHeaderCell.xib; sourceTree = "<group>"; };
+		0F433F171DA3190700A161A8 /* ForecastDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastDetailCell.swift; path = Code/Views/ForecastDetailCell.swift; sourceTree = "<group>"; };
+		0F433F181DA3190700A161A8 /* ForecastDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ForecastDetailCell.xib; path = Code/Views/ForecastDetailCell.xib; sourceTree = "<group>"; };
 		0FB613231DA2DBE200964E8F /* Realm+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Realm+Extensions.swift"; path = "Code/Extensions/Realm+Extensions.swift"; sourceTree = "<group>"; };
 		0FB613261DA2DF7F00964E8F /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataFetcher.swift; path = Code/MVVM/DataFetcher.swift; sourceTree = "<group>"; };
 		0FB613281DA2F97A00964E8F /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Extensions.swift"; path = "Code/Extensions/NSDate+Extensions.swift"; sourceTree = "<group>"; };
@@ -85,6 +95,10 @@
 			children = (
 				0F433F091DA307B100A161A8 /* ForecastCell.swift */,
 				0F433F0A1DA307B100A161A8 /* ForecastCell.xib */,
+				0F433F131DA318E600A161A8 /* ForecastDetailHeaderCell.swift */,
+				0F433F141DA318E600A161A8 /* ForecastDetailHeaderCell.xib */,
+				0F433F171DA3190700A161A8 /* ForecastDetailCell.swift */,
+				0F433F181DA3190700A161A8 /* ForecastDetailCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -176,7 +190,6 @@
 		0FD0032E1DA1A302004880D1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0FD003301DA1A339004880D1 /* Details */,
 				0FD0032F1DA1A32D004880D1 /* Home */,
 			);
 			name = Controllers;
@@ -186,17 +199,11 @@
 		0FD0032F1DA1A32D004880D1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0F433F111DA3174300A161A8 /* DetailViewController.swift */,
 				0FD003331DA1AF80004880D1 /* ViewController.swift */,
 				0F339DC01DA303B500AFFC77 /* Main.storyboard */,
 			);
 			name = Home;
-			sourceTree = "<group>";
-		};
-		0FD003301DA1A339004880D1 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Details;
 			sourceTree = "<group>";
 		};
 		0FD003311DA1AEB1004880D1 /* Models */ = {
@@ -300,8 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FD003141DA1968C004880D1 /* LaunchScreen.storyboard in Resources */,
+				0F433F1A1DA3190700A161A8 /* ForecastDetailCell.xib in Resources */,
 				0F339DC11DA303B500AFFC77 /* Main.storyboard in Resources */,
 				0FD003221DA19D71004880D1 /* Localizable.strings in Resources */,
+				0F433F161DA318E600A161A8 /* ForecastDetailHeaderCell.xib in Resources */,
 				0FD003111DA1968C004880D1 /* Assets.xcassets in Resources */,
 				0F433F0C1DA307B100A161A8 /* ForecastCell.xib in Resources */,
 				0FD0032A1DA19F47004880D1 /* Colors.txt in Resources */,
@@ -378,18 +387,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FB613271DA2DF7F00964E8F /* DataFetcher.swift in Sources */,
+				0F433F151DA318E600A161A8 /* ForecastDetailHeaderCell.swift in Sources */,
 				0F433F101DA3146C00A161A8 /* Float+Extensions.swift in Sources */,
 				0F433F0E1DA30CA600A161A8 /* Helper.swift in Sources */,
 				0FD003411DA1AFEC004880D1 /* Main.swift in Sources */,
 				0FD0033F1DA1AFEC004880D1 /* Forecast.swift in Sources */,
 				0FD003371DA1AFBE004880D1 /* AppDelegate.swift in Sources */,
 				0FD003421DA1AFEC004880D1 /* Weather.swift in Sources */,
+				0F433F121DA3174300A161A8 /* DetailViewController.swift in Sources */,
 				0FD003351DA1AF80004880D1 /* ViewController.swift in Sources */,
 				0FD003241DA19E40004880D1 /* L10n.swift in Sources */,
 				0FD003281DA19F05004880D1 /* Colors.swift in Sources */,
 				0FD003201DA19CC0004880D1 /* Storyboards.swift in Sources */,
 				0FD003261DA19EE3004880D1 /* Images.swift in Sources */,
 				0FD0033E1DA1AFEC004880D1 /* City.swift in Sources */,
+				0F433F191DA3190700A161A8 /* ForecastDetailCell.swift in Sources */,
 				0FD003461DA1B03C004880D1 /* WeatherServices.swift in Sources */,
 				0FB613291DA2F97A00964E8F /* NSDate+Extensions.swift in Sources */,
 				0FB613241DA2DBE200964E8F /* Realm+Extensions.swift in Sources */,

@@ -52,6 +52,11 @@
                 <constraint firstItem="Asr-M8-9jj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="42" id="odN-qM-ix2"/>
             </constraints>
             <size key="customSize" width="225" height="211"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="17l-Xx-Rh2"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="ibDateLabel" destination="iO4-WN-pEU" id="9dz-WD-Wrf"/>
                 <outlet property="ibImageView" destination="Asr-M8-9jj" id="eDs-fS-fhz"/>

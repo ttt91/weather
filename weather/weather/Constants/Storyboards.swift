@@ -44,6 +44,15 @@ struct StoryboardScene {
   enum Main: String, StoryboardSceneType {
     static let storyboardName = "Main"
 
+    case DetailViewControllerScene = "DetailViewController"
+    static func instantiateDetailViewController() -> DetailViewController {
+      guard let vc = StoryboardScene.Main.DetailViewControllerScene.viewController() as? DetailViewController
+      else {
+        fatalError("ViewController 'DetailViewController' is not of the expected class DetailViewController.")
+      }
+      return vc
+    }
+
     case ViewControllerScene = "ViewController"
     static func instantiateViewController() -> ViewController {
       guard let vc = StoryboardScene.Main.ViewControllerScene.viewController() as? ViewController

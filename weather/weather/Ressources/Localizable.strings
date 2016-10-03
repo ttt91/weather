@@ -6,4 +6,7 @@
   Copyright © 2016 Thanh. All rights reserved.
 */
 
-"test" = "test";
+"morning.weather" = "Température matin";
+"afternoon.weather" = "Température midi";
+"humidity.weather" = "Humidité";
+"windSpeed.weather" = "Vitesse du vent";
