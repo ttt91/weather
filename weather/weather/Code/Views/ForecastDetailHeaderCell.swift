@@ -48,10 +48,8 @@ class ForecastDetailHeaderCell: UITableViewCell {
       self.ibDateLabel.text = formatter.stringFromDate(date)
     }
     
-    if let tempMorning = weatherItem.tempMorning, let tempAfternoon = weatherItem.tempAfternoon {
-      self.ibTempLabel.text = "\(tempMorning.format(".0"))°C / \(tempAfternoon.format(".0"))°C"
-    } else if let tempAfternoon = weatherItem.tempAfternoon {
-      self.ibTempLabel.text = "\(tempAfternoon.format(".0"))°C"
+    if let desc = weatherItem.description {
+      self.ibTempLabel.text = desc.capitalizedString
     }
   }
   
