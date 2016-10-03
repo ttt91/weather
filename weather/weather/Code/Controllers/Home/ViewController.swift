@@ -31,8 +31,9 @@ extension ViewController {
     WeatherServices.sharedInstance.weathers(forCity: city, andDays: days) { (city, result, error) -> Void in
       if let error = error {
         print(error)
-      } else {
-        print(result?.dictionaryRepresentation())
+      } else if let result = result {
+        let dataFetcher = DataFetcher()
+        dataFetcher.data(result, days: days)
       }
     }
   }

@@ -20,6 +20,7 @@ public class WeatherList: Object {
   
   // MARK: Properties
   dynamic var dtTxt: String?
+  dynamic var date: NSDate?
   let weather = List<Weather>()
   dynamic var wind: Wind?
   dynamic var main: Main?
@@ -43,6 +44,14 @@ public class WeatherList: Object {
   public convenience init(json: JSON) {
     self.init()
     dtTxt = json[kListDtTxtKey].string
+    
+    if let dtText = dtTxt {
+      let dateFormatter = NSDateFormatter()
+      dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+      date = dateFormatter.dateFromString(dtText)
+      
+    }
+    
     if let items = json[kListWeatherKey].array {
       for item in items {
         weather.append(Weather(json: item))

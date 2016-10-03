@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FB613241DA2DBE200964E8F /* Realm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB613231DA2DBE200964E8F /* Realm+Extensions.swift */; };
+		0FB613271DA2DF7F00964E8F /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB613261DA2DF7F00964E8F /* DataFetcher.swift */; };
+		0FB613291DA2F97A00964E8F /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB613281DA2F97A00964E8F /* NSDate+Extensions.swift */; };
 		0FD003111DA1968C004880D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD003101DA1968C004880D1 /* Assets.xcassets */; };
 		0FD003141DA1968C004880D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD003121DA1968C004880D1 /* LaunchScreen.storyboard */; };
 		0FD003201DA19CC0004880D1 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0031F1DA19CC0004880D1 /* Storyboards.swift */; };
@@ -29,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FB613231DA2DBE200964E8F /* Realm+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Realm+Extensions.swift"; path = "Code/Extensions/Realm+Extensions.swift"; sourceTree = "<group>"; };
+		0FB613261DA2DF7F00964E8F /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataFetcher.swift; path = Code/MVVM/DataFetcher.swift; sourceTree = "<group>"; };
+		0FB613281DA2F97A00964E8F /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Extensions.swift"; path = "Code/Extensions/NSDate+Extensions.swift"; sourceTree = "<group>"; };
 		0FD003061DA1968C004880D1 /* weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD003101DA1968C004880D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FD003131DA1968C004880D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +72,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FB613221DA2DB9A00964E8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0FB613231DA2DBE200964E8F /* Realm+Extensions.swift */,
+				0FB613281DA2F97A00964E8F /* NSDate+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		0FB613251DA2DF6200964E8F /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				0FB613261DA2DF7F00964E8F /* DataFetcher.swift */,
+			);
+			name = MVVM;
+			sourceTree = "<group>";
+		};
 		0FD002FD1DA1968C004880D1 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +147,8 @@
 				0FD003311DA1AEB1004880D1 /* Models */,
 				0FD003441DA1B01E004880D1 /* Services */,
 				0FD0032E1DA1A302004880D1 /* Controllers */,
+				0FB613251DA2DF6200964E8F /* MVVM */,
+				0FB613221DA2DB9A00964E8F /* Extensions */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -331,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FB613271DA2DF7F00964E8F /* DataFetcher.swift in Sources */,
 				0FD003411DA1AFEC004880D1 /* Main.swift in Sources */,
 				0FD0033F1DA1AFEC004880D1 /* Forecast.swift in Sources */,
 				0FD003371DA1AFBE004880D1 /* AppDelegate.swift in Sources */,
@@ -342,6 +368,8 @@
 				0FD003261DA19EE3004880D1 /* Images.swift in Sources */,
 				0FD0033E1DA1AFEC004880D1 /* City.swift in Sources */,
 				0FD003461DA1B03C004880D1 /* WeatherServices.swift in Sources */,
+				0FB613291DA2F97A00964E8F /* NSDate+Extensions.swift in Sources */,
+				0FB613241DA2DBE200964E8F /* Realm+Extensions.swift in Sources */,
 				0FD003401DA1AFEC004880D1 /* List.swift in Sources */,
 				0FD003431DA1AFEC004880D1 /* Wind.swift in Sources */,
 			);

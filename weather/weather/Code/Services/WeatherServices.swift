@@ -31,12 +31,13 @@ class WeatherServices: NSObject {
             
             let json = JSON(value)
             if let code = json["code"].int where code != 200 {
-              let error = NSError(domain: "WheatherServices",
+              let error = NSError(domain: "WeatherServices",
                 code: code,
                 userInfo: [NSLocalizedDescriptionKey:json["message"].stringValue])
               completion(city:nil, result: nil, error: error)
             } else {
               let forecast = Forecast(json: json)
+              forecast.save()
               completion(city:city, result: forecast, error: nil)
             }
           }

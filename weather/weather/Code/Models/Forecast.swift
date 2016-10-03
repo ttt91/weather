@@ -18,6 +18,7 @@ public class Forecast: Object {
   
   
   // MARK: Properties
+  dynamic var identifier = Int(NSDate().timeIntervalSince1970)
   dynamic var city: City?
   dynamic var cnt: Int = 0
   let list = List<WeatherList>()
@@ -52,6 +53,10 @@ public class Forecast: Object {
     
   }
   
+  override public static func primaryKey() -> String? {
+    return "identifier"
+  }
+  
   
   /**
    Generates description of the object in the form of a NSDictionary.
@@ -75,6 +80,20 @@ public class Forecast: Object {
     }
     
     return dictionary
+  }
+  
+  func save() {
+    let realm = Realm.safeInstance()
+    print("Realm Path : \(Realm.Configuration.defaultConfiguration.fileURL)")
+    try! realm.write {
+      realm.deleteAll()
+      realm.add(self, update: true)
+    }
+  }
+  
+  static func last() -> Forecast? {
+    let realm = Realm.safeInstance()
+    return realm.objects(Forecast).last
   }
   
 }
